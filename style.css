@@ -1,14 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 header{
     background-image: linear-gradient(rgba(11, 11, 11, 0.548), rgba(11, 11, 11, 0.548)) , url(./images/pic3.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    background-attachment: fixed;
     padding: 50px;
     padding-bottom: 100px;
     clip-path: polygon(100% 0%, 100% 100%, 0% 90%, 0% 100%, 0% 0%);
@@ -23,13 +19,10 @@ header>section img{
     height: 150px;
     border-radius: 10px;
 }
-header>section>p{
-    font-size: 2vw;
-}
 header>section>p>span{
     font-family: "Anta", sans-serif;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 44px;
     color: rgba(241, 60, 60, 0.741);
     font-weight: bold;
     text-shadow: 0 0 5px rgb(46, 45, 45);
@@ -338,6 +331,19 @@ footer{
     background-color: aqua;
 }
 @media(max-width: 768px) {
+    header{
+        padding-top: 10px !important;
+        padding-bottom: 150px !important;
+    }
+    #my-info p{
+        margin-top: 4px !important;
+    }
+    header>section>p{
+        font-size: 16px;
+    }
+    header>section>p>span{
+        font-size: 28px;
+    }
     #study .study-intro{
         text-align: center !important;
         width: max-content !important;
@@ -357,7 +363,7 @@ footer{
         font-size: 30px;
     }
     #project p{
-        font-size: 13px;
+        font-size: 9px;
     }
     footer p{
         font-size: 10px;
